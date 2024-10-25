@@ -1,0 +1,74 @@
+body {
+  background: hsl(0, 0%, 95%);
+  padding: 25px 50px;
+}
+h2,
+h3 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+code {
+  color: #d4d4d4;
+  background-color: #1e1e1e;
+  font-family: Consolas, "Courier New", monospace;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  border-radius: 10px;
+  padding: 10px 25px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sections {
+  /* background-color: blue; */
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+}
+section {
+  padding: 5px 10px;
+  border: 1px solid hsl(0, 0%, 75%);
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 90%);
+  flex: 1 1 450px;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  min-width: 45%;
+}
+.one-line-demo,
+.multi-line-demo {
+  display: flex;
+  flex-direction: column;
+}
+.one-line-truncated {
+  text-overflow: ellipsis; /*adds ... at the end */
+  overflow: hidden; /* hides the content overflow */
+  white-space: nowrap; /* prevents wrapping and put all text on one line */
+}
+.multi-line-truncated {
+  display: -webkit-box; /*display flex like works with -webkit-line-clamp*/
+  -webkit-line-clamp: 3; /* controls the number of lines */
+  line-clamp: 3;
+  -webkit-box-orient: vertical; /* defines the box laying vertically */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text {
+  padding: 20px;
+  background-color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(0, 0%, 85%);
+  border-radius: 10px;
+}
