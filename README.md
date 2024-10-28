@@ -15,7 +15,7 @@ A tutorial shows how to truncate text in both method CSS & javascript.
 Clone the repository and start exploring!
 
 ```bash
-git clone https://github.com/yourusername/webdev-wonders.git
+git clone https://github.com/K4ys4r/webdev-wonders.git
 ```
 
 ## Usage
