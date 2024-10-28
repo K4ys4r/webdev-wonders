@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Truncate</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <article>
+      <h1>Text Truncate</h1>
+      <div class="text">
+        <h3>Text to truncate</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+          dolore dignissimos similique repudiandae sint vel quam debitis tempore
+          vero quo modi reiciendis, quos dolores aperiam qui magnam ea aut.
+          Neque repellendus perspiciatis voluptate, unde fuga omnis id ducimus
+          amet et. Expedita deserunt repudiandae labore consequuntur! Beatae
+          obcaecati ut explicabo eveniet.
+        </p>
+      </div>
+      <div class="sections">
+        <section id="truncate-js">
+          <h2>By Javascript</h2>
+          <code>
+            <div>
+              <div>
+                <span style="color: #569cd6">function</span
+                ><span style="color: #d4d4d4"> </span
+                ><span style="color: #dcdcaa">truncateText</span
+                ><span style="color: #d4d4d4">(</span
+                ><span style="color: #9cdcfe">element</span
+                ><span style="color: #d4d4d4">, </span
+                ><span style="color: #9cdcfe">length</span
+                ><span style="color: #d4d4d4">) {</span>
+              </div>
+              <div>
+                <span style="color: #d4d4d4">&#160; </span
+                ><span style="color: #569cd6">let</span
+                ><span style="color: #d4d4d4"> </span
+                ><span style="color: #9cdcfe">text</span
+                ><span style="color: #d4d4d4"> = </span
+                ><span style="color: #9cdcfe">element</span
+                ><span style="color: #d4d4d4">.innerText;</span>
+              </div>
+              <div>
+                <span style="color: #d4d4d4">&#160; </span
+                ><span style="color: #c586c0">if</span
+                ><span style="color: #d4d4d4"> (</span
+                ><span style="color: #9cdcfe">text</span
+                ><span style="color: #d4d4d4">.</span
+                ><span style="color: #9cdcfe">length</span
+                ><span style="color: #d4d4d4"> &gt; </span
+                ><span style="color: #9cdcfe">length</span
+                ><span style="color: #d4d4d4">) </span>
+              </div>
+              <div>
+                <span style="color: #d4d4d4">&#160; &#160; </span
+                ><span style="color: #9cdcfe">text</span
+                ><span style="color: #d4d4d4"> = </span
+                ><span style="color: #9cdcfe">text</span
+                ><span style="color: #d4d4d4">.</span
+                ><span style="color: #dcdcaa">substring</span
+                ><span style="color: #d4d4d4">(</span
+                ><span style="color: #b5cea8">0</span
+                ><span style="color: #d4d4d4">, </span
+                ><span style="color: #9cdcfe">length</span
+                ><span style="color: #d4d4d4">) + </span
+                ><span style="color: #ce9178">"..."</span
+                ><span style="color: #d4d4d4">;</span>
+              </div>
+              <div>
+                <span style="color: #d4d4d4">&#160; </span
+                ><span style="color: #9cdcfe">element</span
+                ><span style="color: #d4d4d4">.innerText = </span
+                ><span style="color: #9cdcfe">text</span
+                ><span style="color: #d4d4d4">;</span>
+              </div>
+              <div><span style="color: #d4d4d4">}</span></div>
+              <br />
+              <div>
+                <span style="color: #569cd6">let</span
+                ><span style="color: #d4d4d4"> </span
+                ><span style="color: #9cdcfe">p</span
+                ><span style="color: #d4d4d4"> = </span
+                ><span style="color: #9cdcfe">document</span
+                ><span style="color: #d4d4d4">.</span
+                ><span style="color: #dcdcaa">querySelector</span
+                ><span style="color: #d4d4d4">(</span
+                ><span style="color: #ce9178">".js-truncated"</span
+                ><span style="color: #d4d4d4">);</span>
+              </div>
+              <div>
+                <span style="color: #dcdcaa">truncateText</span
+                ><span style="color: #d4d4d4">(</span
+                ><span style="color: #9cdcfe">p</span
+                ><span style="color: #d4d4d4">, </span
+                ><span style="color: #b5cea8">100</span
+                ><span style="color: #d4d4d4">);</span>
+              </div>
+            </div>
+          </code>
+          <div class="result">
+            <h3>Result</h3>
+            <div class="text">
+              <p class="js-truncated">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Tempora dolore dignissimos similique repudiandae sint vel quam
+                debitis tempore vero quo modi reiciendis, quos dolores aperiam
+                qui magnam ea aut. Neque repellendus perspiciatis voluptate,
+                unde fuga omnis id ducimus amet et. Expedita deserunt
+                repudiandae labore consequuntur! Beatae obcaecati ut explicabo
+                eveniet.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="truncate-css">
+          <h2>By CSS</h2>
+          <div class="one-line-demo">
+            <h3><u>Over one line</u></h3>
+            <code>
+              <div>
+                <span style="color: #d4d4d4">.</span
+                ><span style="color: #d7ba7d">one-line-truncated</span
+                ><span style="color: #d4d4d4"> {</span>
+              </div>
+              <div>
+                <span style="color: #d4d4d4">&#160; </span
+                ><span style="color: #9cdcfe">text-overflow</span
+                ><span style="color: #d4d4d4">: </span
+                ><span style="color: #ce9178">ellipsis</span
+                ><span style="color: #d4d4d4">;</span>
+              </div>
+              <div>
+                <span style="color: #d4d4d4">&#160; </span
+                ><span style="color: #9cdcfe">overflow</span
+                ><span style="color: #d4d4d4">: </span
+                ><span style="color: #ce9178">hidden</span
+                ><span style="color: #d4d4d4">;</span>
+              </div>
+              <div>
+                <span style="color: #d4d4d4">&#160; </span
+                ><span style="color: #9cdcfe">white-space</span
+                ><span style="color: #d4d4d4">: </span
+                ><span style="color: #ce9178">nowrap</span
+                ><span style="color: #d4d4d4">;</span>
+              </div>
+              <div>
+                <span style="color: #d4d4d4">}</span>
+              </div>
+            </code>
+            <div class="result">
+              <h3>Result</h3>
+              <div class="text">
+                <p class="one-line-truncated">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Tempora dolore dignissimos similique repudiandae sint vel quam
+                  debitis tempore vero quo modi reiciendis, quos dolores aperiam
+                  qui magnam ea aut. Neque repellendus perspiciatis voluptate,
+                  unde fuga omnis id ducimus amet et. Expedita deserunt
+                  repudiandae labore consequuntur! Beatae obcaecati ut explicabo
+                  eveniet.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="multi-line-demo">
+            <h3><u> Over multiple lines </u></h3>
+            <code>
+              <div>
+                <span style="color: #d4d4d4">.</span
+                ><span style="color: #d7ba7d">multi-line-truncated</span
+                ><span style="color: #d4d4d4"> {</span>
+              </div>
+              <div>
+                <span style="color: #d4d4d4">&#160; </span
+                ><span style="color: #9cdcfe">display</span
+                ><span style="color: #d4d4d4">: -webkit-box;</span>
+              </div>
+              <div>
+                <span style="color: #d4d4d4">&#160; </span
+                ><span style="color: #9cdcfe">-webkit-line-clamp</span
+                ><span style="color: #d4d4d4">: </span
+                ><span style="color: #b5cea8">3</span
+                ><span style="color: #d4d4d4">;</span>
+              </div>
+              <div>
+                <span style="color: #d4d4d4">&#160; </span
+                ><span style="color: #9cdcfe">-webkit-box-orient</span
+                ><span style="color: #d4d4d4">: </span
+                ><span style="color: #ce9178">vertical</span
+                ><span style="color: #d4d4d4">;</span>
+              </div>
+              <div>
+                <span style="color: #d4d4d4">&#160; </span
+                ><span style="color: #9cdcfe">overflow</span
+                ><span style="color: #d4d4d4">: </span
+                ><span style="color: #ce9178">hidden</span
+                ><span style="color: #d4d4d4">;</span>
+              </div>
+              <div>
+                <span style="color: #d4d4d4">&#160; </span
+                ><span style="color: #9cdcfe">text-overflow</span
+                ><span style="color: #d4d4d4">: </span
+                ><span style="color: #ce9178">ellipsis</span
+                ><span style="color: #d4d4d4">;</span>
+              </div>
+              <div><span style="color: #d4d4d4">}</span></div>
+            </code>
+            <div class="result">
+              <h3>Result</h3>
+              <div class="text">
+                <p class="multi-line-truncated">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Tempora dolore dignissimos similique repudiandae sint vel quam
+                  debitis tempore vero quo modi reiciendis, quos dolores aperiam
+                  qui magnam ea aut. Neque repellendus perspiciatis voluptate,
+                  unde fuga omnis id ducimus amet et. Expedita deserunt
+                  repudiandae labore consequuntur! Beatae obcaecati ut explicabo
+                  eveniet.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </article>
+    <script src="main.js"></script>
+  </body>
+</html>
