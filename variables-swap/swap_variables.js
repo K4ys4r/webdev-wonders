@@ -30,10 +30,10 @@ function byArrayExpression(a, b) {
   console.log(`\tAfter swapping : a  = ${a}, b = ${b} `);
 }
 
+// By  (+) & (-)  operators
 function byAddAndSubtraction(a, b) {
   console.log(`\nSwapping ${arguments.callee.name} `);
   console.log(`\tInitial values : a = ${a}, b = ${b} `);
-  // By  (+) & (-)  operators
   b = a + b;
   a = b - a;
   b = b - a;
