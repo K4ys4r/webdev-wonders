@@ -42,7 +42,9 @@ function byAddAndSubtraction(a, b) {
 
 // By (*) & (/) operators
 // Attention of floating-point precision issues
+// Attention of for nul number to avoid dividing by 0
 function byMultiplicationAndDivision(a, b) {
+  if (a == 0 || b == 0) throw Error("Number must be not nul");
   console.log(`\nSwapping ${arguments.callee.name} `);
   console.log(`\tInitial values : a = ${a}, b = ${b} `);
   b = a * b;
