@@ -14,6 +14,10 @@ A tutorial shows how to truncate text in both method CSS & javascript.
 
 A tutorial shows how to perform variables swapping by different methods.
 
+### _condition-if-switch-obj_
+
+A tutorial shows how to handle conditions by different methods.
+
 ## Installation
 
 Clone the repository and start exploring!
@@ -21,6 +25,7 @@ Clone the repository and start exploring!
 ```bash
 git clone https://github.com/K4ys4r/webdev-wonders.git
 ```
+
 ## Usage
 
 Navigate to the project directory.
