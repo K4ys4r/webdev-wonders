@@ -18,6 +18,10 @@ A tutorial shows how to perform variables swapping by different methods.
 
 A tutorial shows how to handle conditions by different methods.
 
+### _Chrome-ai_
+
+A tutorial shows how to interact with the chrome `window.ai` API. I t allows communicating with a local model.
+
 ## Installation
 
 Clone the repository and start exploring!
