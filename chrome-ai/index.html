@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chrome window.ai</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <article>
+      <h1>Chrome <i>window.ai</i></h1>
+      <section>
+        <h4 class="chat-header">AI Chat Bot example</h4>
+        <div class="chat-body" id="chat-body">
+          <template id="ai-response">
+            <div class="ai-response">
+              <span class="avatar">&#129302;</span>
+              <span class="response" id="response">
+                <span class="ai-typing"></span>
+              </span>
+            </div>
+          </template>
+          <template id="user-question">
+            <div class="user-question">
+              <span class="avatar"></span>
+              <span class="question" id="question"></span>
+            </div>
+          </template>
+        </div>
+
+        <form id="form-chat">
+          <div class="chat-footer">
+            <input
+              type="text"
+              id="chat-prompt-input"
+              placeholder="Ask me a question..."
+            />
+            <button type="button" class="chat-prompt-btn" id="chat-prompt-btn">
+              Submit
+            </button>
+          </div>
+        </form>
+      </section>
+    </article>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
